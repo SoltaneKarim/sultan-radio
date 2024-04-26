@@ -1,6 +1,5 @@
 import playing from "./imgs/playing.png";
 import pausing from "./imgs/pauseing.png";
-import coolio from "./music/hiphop-rap/Coolio - Ooh La La (Official Music Video) [Clean].mp3";
 import song1 from "./music/hiphop-rap/2Pac - 2 Of Amerikaz Most Wanted (feat. Snoop Dogg).mp3";
 import song2 from "./music/hiphop-rap/2Pac - Ain t Hard 2 Find Feat. B-Legit, Richie Rich, D-Shot, C-Bo & E-40.mp3";
 import song3 from "./music/hiphop-rap/2Pac - All About U.mp3";
