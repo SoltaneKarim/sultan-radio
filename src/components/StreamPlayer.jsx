@@ -3,56 +3,42 @@ import ReactHowler from "react-howler";
 import { assets } from "../assets";
 
 const StreamPlayer = () => {
-  const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(true); // Set initial state to true
+  const [muted, setMuted] = useState(false); // New state for muting/unmuting
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [pausedIndex, setPausedIndex] = useState(0);
-
-  const image = play ? assets.pictures.pausing : assets.pictures.playing;
+  const [index, setIndex] = useState(0);
+  const [song, setSong] = useState("");
+  const image = muted ? assets.pictures.playing : assets.pictures.pausing; // Update image based on muted state
   const music = assets.music;
 
   const toggleAudio = () => {
-    setPlay((prevState) => !prevState);
-  };
-
-  const handleEnd = () => {
-    // Generate a random index for the next song
-    const randomIndex = Math.floor(Math.random() * music.length);
-    setCurrentIndex(randomIndex);
-    setPausedIndex(randomIndex); // Update paused index as well
-    setPlay(true); // Start playing the next song
-  };
-
-  const handlePause = () => {
-    setPlay(false); // Pause the player
-    setPausedIndex(currentIndex); // Save the current index
-  };
-
-  const handlePlay = () => {
-    setCurrentIndex(pausedIndex); // Set the current index to the paused index
-    setPlay(true); // Resume playing
+    setMuted((prevMuted) => !prevMuted); // Toggle muted state
   };
 
   useEffect(() => {
-    // Generate a random index when the component mounts
     const randomIndex = Math.floor(Math.random() * music.length);
+    setIndex(randomIndex);
     setCurrentIndex(randomIndex);
-    setPausedIndex(randomIndex);
   }, []);
+
+  const handleEnd = () => {
+    // Play the next song randomly when the current one ends
+    const randomIndex = Math.floor(Math.random() * music.length);
+    setIndex(randomIndex);
+    setCurrentIndex(randomIndex);
+  };
 
   return (
     <div>
       <ReactHowler
-        src={music[currentIndex]}
+        key={index}
+        src={song ? song : music[currentIndex]}
         playing={play}
-        loop={false}
-        onEnd={handleEnd}
+        loop={true} // Set loop to true to continue playing after it finishes
+        mute={muted} // Set mute state
+        onEnd={handleEnd} // Call handleEnd when the current song ends
       />
-      <img
-        id="pp-img"
-        onClick={play ? handlePause : handlePlay}
-        src={image}
-        alt="Play/Pause"
-      />
+      <img id="pp-img" onClick={toggleAudio} src={image} alt="Mute/Unmute" />
     </div>
   );
 };
