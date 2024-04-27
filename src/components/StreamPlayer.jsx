@@ -4,7 +4,7 @@ import { assets } from "../assets";
 
 const StreamPlayer = () => {
   const [play, setPlay] = useState(true); // Set initial state to true
-  const [muted, setMuted] = useState(false); // New state for muting/unmuting
+  const [muted, setMuted] = useState(true); // New state for muting/unmuting
   const [currentIndex, setCurrentIndex] = useState(0);
   const [index, setIndex] = useState(0);
   const [song, setSong] = useState("");
@@ -29,9 +29,9 @@ const StreamPlayer = () => {
   };
 
   return (
-    <div>
+    <div className="player">
       <ReactHowler
-        key={index}
+        key={index} 
         src={song ? song : music[currentIndex]}
         playing={play}
         loop={true} // Set loop to true to continue playing after it finishes
