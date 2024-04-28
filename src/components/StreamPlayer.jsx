@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactHowler from "react-howler";
 import { assets } from "../assets";
-import { array } from "../../public/userTestimonial/index"; // Assuming the dummy data is in a file named data.js
 import CardDetails from "./CardDetails";
 
 const StreamPlayer = () => {
@@ -12,18 +11,15 @@ const StreamPlayer = () => {
   const [song, setSong] = useState("");
   const image = muted ? assets.pictures.playing : assets.pictures.pausing; // Update image based on muted state
   const music = assets.music;
-  const [playlist, setPlaylist] = useState([]);
 
   const toggleAudio = () => {
     setMuted((prevMuted) => !prevMuted); // Toggle muted state
-    console.log("currentIndex", currentIndex);
   };
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * music.length);
     setIndex(randomIndex);
     setCurrentIndex(randomIndex);
-    setPlaylist(music[currentIndex]);
   }, []);
 
   const handleEnd = () => {
@@ -31,7 +27,6 @@ const StreamPlayer = () => {
     const randomIndex = Math.floor(Math.random() * music.length);
     setIndex(randomIndex);
     setCurrentIndex(randomIndex);
-    setPlaylist(music[currentIndex]);
   };
 
   return (
