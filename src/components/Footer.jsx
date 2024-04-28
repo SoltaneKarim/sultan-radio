@@ -1,12 +1,6 @@
 import React from 'react';
-import logos from "../../public/logo-sm/index"
 
 function Footer() {
-    const facebook = "/public/logo-sm/logo-facebook.jpg";
-    const instagram = "/public/logo-sm/logo-instagram.jpg";
-    const github = "/public/logo-sm/logo-github.jpg";
-    const linkedin = "/public/logo-sm/logo-linkedin.jpg";
-
     return (
         <footer className="footer">
             <ul className="social-icon">

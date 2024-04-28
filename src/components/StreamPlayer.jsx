@@ -16,7 +16,7 @@ const StreamPlayer = () => {
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * music.length);
-    setIndex(randomIndex);
+    setIndex(randomIndex); 
     setCurrentIndex(randomIndex);
   }, []);
 
@@ -32,13 +32,13 @@ const StreamPlayer = () => {
   const cleanSongName = (name) => {
     let cleanedName = name.split("/")[5]; // Get the song name part
     toRemove.forEach(substring => {
-      cleanedName = cleanedName?.replace(new RegExp(substring, "gi"), ''); // Replace each substring with an empty string
+      cleanedName = cleanedName.replace(new RegExp(substring, "gi"), ''); // Replace each substring with an empty string
     });
-    return cleanedName; // Trim any leading or trailing spaces
+    return cleanedName;
   };
-
+  
   const song = cleanSongName(music[currentIndex]);
-
+  
   return (
     <div>
       <div className="player">
