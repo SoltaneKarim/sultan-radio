@@ -5,7 +5,7 @@ const toRemove = ["%20", ".mp3", "%5", "%80", "with","With","lyrics","Lyrics",".
 const cleanSongName = (name) => {
   let cleanedName = name.split("/")[5]; // Get the song name part
   toRemove.forEach(substring => {
-    cleanedName = cleanedName.replace(new RegExp(substring, "gi"), ''); // Replace each substring with an empty string
+    cleanedName = cleanedName?.replace(new RegExp(substring, "gi"), ''); // Replace each substring with an empty string
   });
   return cleanedName.trim(); // Trim any leading or trailing spaces
 };
