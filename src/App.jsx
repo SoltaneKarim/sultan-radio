@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import StreamPlayer from './components/StreamPlayer';
-import Card from "./components/Card"
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='container'>
+    <div >
       <StreamPlayer />
-      <Card />
-
+      <Footer />
     </div>
   );
 }
