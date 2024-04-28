@@ -9,16 +9,16 @@ function Footer() {
     return (
         <footer className="footer">
             <ul className="social-icon">
-                <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/lkormi/">
+                <li className="social-icon__item"><a className="social-icon__link" href="#">
                     <img className="sm-logo" src={facebook} alt="Facebook" />
                 </a></li>
-                <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/karim_ben_soltane/">
+                <li className="social-icon__item"><a className="social-icon__link" href="#">
                     <img className="sm-logo" src={instagram} alt="Instagram" />
                 </a></li>
-                <li className="social-icon__item"><a className="social-icon__link" href="https://github.com/SoltaneKarim">
+                <li className="social-icon__item"><a className="social-icon__link" href="#">
                     <img className="sm-logo" src={github} alt="GitHub" />
                 </a></li>
-                <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/karim-soltane-416085290/">
+                <li className="social-icon__item"><a className="social-icon__link" href="#">
                     <img className="sm-logo" src={linkedin} alt="LinkedIn" />
                 </a></li>
             </ul>
