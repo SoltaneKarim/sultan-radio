@@ -27,14 +27,14 @@ const StreamPlayer = () => {
     setCurrentIndex(randomIndex);
   };
 
-  const toRemove = ["HD","%20", ".mp3", "%5", "%80", "with", "With", "lyrics", "Lyrics", ".(Official Video)", "%E2", "Official", "official", "%99", "%C3", "%F0", "%9F", "%8E", "%A7", "v1", "version", "MusicVideo", "Video", ""];
+  const toRemove = ["Radio","HQ","Audio","HD","%20", ".mp3", "%5", "%80", "with", "With", "lyrics", "Lyrics", ".(Official Video)", "%E2", "Official", "official", "%99", "%C3", "%F0", "%9F", "%8E", "%A7", "v1", "version", "MusicVideo", "Video", ""];
 
   const cleanSongName = (name) => {
     let cleanedName = name.split("/")[5]; // Get the song name part
     toRemove.forEach(substring => {
       cleanedName = cleanedName?.replace(new RegExp(substring, "gi"), ''); // Replace each substring with an empty string
     });
-    return cleanedName.trim(); // Trim any leading or trailing spaces
+    return cleanedName; // Trim any leading or trailing spaces
   };
 
   const song = cleanSongName(music[currentIndex]);
