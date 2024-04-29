@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactHowler from "react-howler";
-import { assets } from "../assets";
+import { assets } from "../assets/hiphop";
 
 const StreamPlayer = () => {
   const [play, setPlay] = useState(true); // Set initial state to true
@@ -8,7 +8,7 @@ const StreamPlayer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [index, setIndex] = useState(0);
   const image = muted ? assets.pictures.playing : assets.pictures.pausing; // Update image based on muted state
-  const music = assets.music;
+  const music = assets.hiphop;
 
   const toggleAudio = () => {
     setMuted((prevMuted) => !prevMuted); // Toggle muted state
@@ -27,15 +27,47 @@ const StreamPlayer = () => {
     setCurrentIndex(randomIndex);
   };
 
-  const toRemove = ["Radio","HQ","Audio","HD","%20", ".mp3", "%5", "%80", "with", "With", "lyrics", "Lyrics", ".(Official Video)", "%E2", "Official", "official", "%99", "%C3", "%F0", "%9F", "%8E", "%A7", "v1", "version", "MusicVideo", "Video", ""];
-
   const cleanSongName = (name) => {
-    let cleanedName = name.split("/")[5]; // Get the song name part
-    toRemove.forEach(substring => {
-      cleanedName = cleanedName?.replace(new RegExp(substring, "gi"), ''); // Replace each substring with an empty string
-    });
+    let cleanedName = ''; // Initialize an empty string to store the cleaned name
+    let word = ''; // Initialize an empty string to build each word
+    for (let i = 0; i < name.length; i++) {
+      if (name[i] === '/' && name[i + 1] === '/') {
+        // If two consecutive slashes are encountered, break the loop
+        break;
+      } else if (name[i] === '/') {
+        // If a single slash is encountered, reset the word
+        word = '';
+      } else {
+        // If a character is not a slash, add it to the word
+        word += name[i];
+      }
+    }
+    // Define words to be removed
+    const wordsToRemove = ["%20", ".mp3", "%5", "%80", "%E2", "%99", "%C3", "%F0", "%9F", "%8E", "%A7"];
+    // Iterate through each character in the word and check if it matches any of the words to remove
+    for (let i = 0; i < word.length; i++) {
+      let match = false;
+      for (let j = 0; j < wordsToRemove.length; j++) {
+        const len = wordsToRemove[j].length;
+        // Check if the current substring in the word matches any of the words to remove
+        if (word.substring(i, i + len) === wordsToRemove[j]) {
+          // If a match is found, set match to true and skip the characters to remove
+          match = true;
+          i += len - 1;
+          break;
+        }
+      }
+      // If no match is found, add the character to the cleaned name
+      if (!match) {
+        cleanedName += word[i];
+      } else {
+        // If a match is found, add a space after removing the word
+        cleanedName += " ";
+      }
+    }
     return cleanedName;
   };
+  
   
   const song = cleanSongName(music[currentIndex]);
   

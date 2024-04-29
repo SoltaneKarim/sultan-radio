@@ -19,11 +19,11 @@
 .card {
   position: fixed;
   display: flex;
-  height: 100px;
+  height: 90px;
   width: 400px;
-  background-color: #dc4343;
-  border-radius: 10px;
-  box-shadow: -1rem 0 5rem #846262e9;
+  background-color: #d0753cea;
+  border-radius: 30px;
+  box-shadow: -1rem 0 5rem #b68181e9;
   transition: 0.4s ease-out;
   font-size: 110%;
   margin: 0;
@@ -31,7 +31,7 @@
 }
 
 .card:hover {
-  transform: translateY(-20px);
+  transform: translateY(-15px);
   transition: 0.4s ease-out;
 }
 
