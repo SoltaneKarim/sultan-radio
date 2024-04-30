@@ -1,3 +1,4 @@
+// hiphop files 
 import playing from "./imgs/playing.png";
 import pausing from "./imgs/pauseing.png";
 import song1 from "./music/hiphop-rap/2 4 Family - Stay.mp3"
@@ -121,14 +122,209 @@ import song118 from "./music/hiphop-rap/Wu-Tang Clan - Protect Ya Neck.mp3"
 import song119 from "./music/hiphop-rap/Young Gs - Puff Daddy Feat Jay-Z & Notorious B.I.G.mp3"
 import song120 from "./music/hiphop-rap/Zhane- Hey Mr. D.J..mp3"
 
+// afro files 
+
+import song121 from "./music/afro/Burna Boy - City Boys.mp3";
+import song122 from "./music/afro/Burna Boy - Normal.mp3";
+import song123 from "./music/afro/Burna Boy - On Form.mp3";
+import song124 from "./music/afro/Burna Boy - Sittin On Top Of The World.mp3";
+import song125 from "./music/afro/Burna Boy - Tested, Approved & Trusted.mp3";
+import song126 from "./music/afro/Byron-Messia-Taliban.mp3";
+import song127 from "./music/afro/Omah-Lay - Lo-Lo.mp3";
+import song128 from "./music/afro/Omah-Lay - soso.mp3";
+import song129 from "./music/afro/Victony - Soweto with Don Toliver, Rema & Tempoe.mp3";
+
+// deep files 
+
+import song130 from "./music/deep/Alaia & Gallo featuring Kevin Haden - Who Is He.mp3"
+import song131 from "./music/deep/AVAION  PaulWetz  Nu Aspect feat Yuma - Sleepless.mp3"
+import song132 from "./music/deep/AVAION - Hope.mp3"
+import song133 from "./music/deep/AVAION - Pieces.mp3"
+import song134 from "./music/deep/Bellaire - Some Jazz To Make Love On.mp3"
+import song135 from "./music/deep/Claptone - I Write Your Name (feat. Jay-Jay Johanson).mp3"
+import song136 from "./music/deep/Claptone - Leave Your Light On feat. Young Galaxy.mp3"
+import song137 from "./music/deep/David Penn - Nobody (Feat. Dames Brown).mp3"
+import song138 from "./music/deep/Don't You Just Know It - Huey _Piano_ Smith.mp3"
+import song139 from "./music/deep/Folamour - When U Came Into My Life.mp3"
+import song140 from "./music/deep/Gorgon City - Imagination ft. Katy Menditta.mp3"
+import song141 from "./music/deep/Gorgon City, DRAMA - Youve Done Enough.mp3"
+import song142 from "./music/deep/Jay Vegas - Come Soon.mp3"
+import song143 from "./music/deep/Kylie Minogue - Can't Get You Out Of My Head.mp3"
+import song144 from "./music/deep/LP Giobbi - 'All In A Dream (feat. DJ Tennis & Joseph Ashworth).mp3"
+import song145 from "./music/deep/Made By Pete & Zoe Kypri - Horizon Red.mp3"
+import song146 from "./music/deep/Mahmut Orhan - Everyday.mp3"
+import song147 from "./music/deep/Oliver $ & Jimi Jules - Pushing On.mp3"
+import song148 from "./music/deep/RÜFÜS DU SOL - Innerbloom.mp3"
+import song149 from "./music/deep/Philip George - Love Inside.mp3"
+import song150 from "./music/deep/RÜFÜS DU SOL - No Place.mp3"
+import song151 from "./music/deep/RÜFÜS DU SOL - Sundream.mp3"
+import song152 from "./music/deep/RÜFÜS DU SOL - Treat You Better.mp3"
+import song153 from "./music/deep/RÜFÜS DU SOL - Underwater.mp3"
+import song154 from "./music/deep/RÜFÜS DU SOL - Until The Sun Needs To Rise.mp3"
+import song155 from "./music/deep/RÜFÜS DU SOL - You Were Right.mp3"
+import song156 from "./music/deep/Selace ‘So Hooked On Your Lovin’ (Mousse T.’s Extended Disco Shizzle).mp3"
+import song157 from "./music/deep/Sonny Fodera Feat Yasmin Feeling U (Deep Mix).mp3"
+import song158 from "./music/deep/ST GERMAIN - Sittin' Here (Atjazz Remix).mp3"
+import song159 from "./music/deep/St Germain - What's New.mp3"
+import song160 from "./music/deep/Weiss - Feel My Needs (Purple Disco Machine Remix).mp3"
+import song161 from "./music/deep/WTHI032 - DSF & Double Touch - Feléa  (Original Mix).mp3"
+import song162 from "./music/deep/You Got Me Baby (Always) - Deepjack. Mr Nu (Mahmut Orhan Remix).mp3"
+
+// funk files 
+
+import song163 from "./music/funk/Atlantic Starr - Love Me Down.mp3"
+import song164 from "./music/funk/Cerrone - Give me Love.mp3"
+import song165 from "./music/funk/George Benson - Love X Love.mp3"
+import song166 from "./music/funk/JAMES BROWN - Papa Dont Take No Mess  My Thang.mp3"
+import song167 from "./music/funk/James Brown - The Payback.mp3"
+import song168 from "./music/funk/Lillo Thomas - Let me be Yours.mp3"
+
+// ragga files 
+
+import song169 from "./music/ragga-dancehall nudiscodance/Captain Hollywood Project - More and More.mp3"
+import song170 from "./music/ragga-dancehall nudiscodance/Captain Hollywood Project - Only With You.mp3"
+import song171 from "./music/ragga-dancehall nudiscodance/Corona - The Rhythm of the Night.mp3"
+import song172 from "./music/ragga-dancehall nudiscodance/Crystal Waters - Gypsy Woman.mp3"
+import song173 from "./music/ragga-dancehall nudiscodance/Dillinger - Cocaine In My Brain.mp3"
+import song174 from "./music/ragga-dancehall nudiscodance/Dr Alban - Look Who´s Talking.mp3"
+import song175 from "./music/ragga-dancehall nudiscodance/Dr. Alban - Let The Beat Go On.mp3"
+import song176 from "./music/ragga-dancehall nudiscodance/Dr. Alban - One love.mp3"
+import song177 from "./music/ragga-dancehall nudiscodance/Dr. Alban – Loverboy.mp3"
+import song178 from "./music/ragga-dancehall nudiscodance/Fun Factory - I Wanna B With U.mp3"
+import song179 from "./music/ragga-dancehall nudiscodance/La Bouche - Be My Lover.mp3"
+import song180 from "./music/ragga-dancehall nudiscodance/Snap! - Ooops Up.mp3"
+import song181 from "./music/ragga-dancehall nudiscodance/SNAP! - The Power.mp3"
+import song182 from "./music/ragga-dancehall nudiscodance/Snow - Informer.mp3"
+import song183 from "./music/ragga-dancehall nudiscodance/Soul II Soul - Get a Life.mp3"
+import song184 from "./music/ragga-dancehall nudiscodance/Technotronic - Pump Up The Jam.mp3"
+
+// reggae files
+
+import song185 from "./music/reggae/Alpha blondy   Wari bana -.mp3"
+import song186 from "./music/reggae/ALPHA BLONDY  Sankara.mp3"
+import song187 from "./music/reggae/Alpha Blondy - Mister Grande Gueule.mp3"
+import song188 from "./music/reggae/Alpha Blondy - Peace In Liberia.mp3"
+import song189 from "./music/reggae/Am A Do - Bob Marley & The Wailers.mp3"
+import song190 from "./music/reggae/Bob Marley - Baby Weve Got A Date.mp3"
+import song191 from "./music/reggae/Bob Marley - Kaya.mp3"
+import song192 from "./music/reggae/Bob Marley - Natty Dread.mp3"
+import song193 from "./music/reggae/YG Marley - Praise Jah in the Moonlight.mp3"
+import song194 from "./music/reggae/Bob marley - Talkin Blues.mp3"
+import song195 from "./music/reggae/Dont Rock My Boat - Bob Marley & The Wailers.mp3"
+import song196 from "./music/reggae/Knockin on Heavens Door.mp3"
+import song197 from "./music/reggae/Lutan Fyah - Bossman.mp3"
+import song198 from "./music/reggae/Pressure - Love and Affection.mp3"
+import song199 from "./music/reggae/Rastaman Chant - Bob Marley & The Wailers.mp3"
+import song200 from "./music/reggae/Roots & Chalice - Chronixx.mp3"
+import song201 from "./music/reggae/Stop The Train - Bob Marley & The Wailers.mp3"
+import song202 from "./music/reggae/The Skatalites - Rock Fort Rock.mp3"
+import song203 from "./music/reggae/Ub40 - Groovin.mp3"
+import song204 from "./music/reggae/Ub40 - The Way You Do The Things You Do.mp3"
+import song205 from "./music/reggae/Walk The Proud Land - Bob Marley  The Wailers.mp3"
+
+// soul files
+
+import song206 from "./music/pop-soul/A Long Time - Mayer Hawthorne.mp3"
+import song207 from "./music/pop-soul/Alexander O Neal - If You Were Here Tonight.mp3"
+import song208 from "./music/pop-soul/Alicia Keys - You Dont Know My Name.mp3"
+import song209 from "./music/pop-soul/Amy Winehouse - Detachment.mp3"
+import song210 from "./music/pop-soul/Betty Wright - No Pain No Gain.mp3"
+import song211 from "./music/pop-soul/Betty Wright- After The Pain.mp3"
+import song212 from "./music/pop-soul/Betty Wright-Tonight is the Night.mp3"
+import song213 from "./music/pop-soul/Blue One love - Audio.mp3"
+import song214 from "./music/pop-soul/Blue - U Make Me Wanna.mp3"
+import song215 from "./music/pop-soul/Boney M. - Ma Baker Festival 1979.mp3"
+import song216 from "./music/pop-soul/Brainbox! - Down Man.mp3"
+import song217 from "./music/pop-soul/Bryan Adams - Heaven.mp3"
+import song218 from "./music/pop-soul/Candy Dulfer ft Dave Stewart - Lily Was Here 1989.mp3"
+import song219 from "./music/pop-soul/Chaka Khan - Through the Fire.mp3"
+import song220 from "./music/pop-soul/Change - Sharing Your Love.mp3"
+import song221 from "./music/pop-soul/Craig David - Last Night.mp3"
+import song222 from "./music/pop-soul/DAngelo & The Vanguard - Really Love.mp3"
+import song223 from "./music/pop-soul/DAngelo - Chicken Grease.mp3"
+import song224 from "./music/pop-soul/DAngelo - Cruisin.mp3"
+import song225 from "./music/pop-soul/DAngelo - Feel Like Making Love.mp3"
+import song226 from "./music/pop-soul/DAngelo - Lady.mp3"
+import song227 from "./music/pop-soul/David Foster Hit Man Returns Heart To Heart.mp3"
+import song228 from "./music/pop-soul/Dire Straits - Sultans Of Swing.mp3"
+import song229 from "./music/pop-soul/EASY - Lionel Richie.mp3"
+import song230 from "./music/pop-soul/Eros Ramazzotti - Un Altra Te.mp3"
+import song231 from "./music/pop-soul/Faith Evans - Love Like This.mp3"
+import song232 from "./music/pop-soul/Foolish Beat - Debbie Gibson.mp3"
+import song233 from "./music/pop-soul/Friends Can Be Lovers _ Dionne Warwick.mp3"
+import song234 from "./music/pop-soul/Gap Band - Burn Rubber On Me.mp3"
+import song235 from "./music/pop-soul/George Michael - Father Figure.mp3"
+import song236 from "./music/pop-soul/Groove Theory - Tell Me.mp3"
+import song237 from "./music/pop-soul/Gladys Knight & The Pips - End of the Road Medley.mp3"
+import song238 from "./music/pop-soul/Gregory Abbot - Shake You Down.mp3"
+import song239 from "./music/pop-soul/Hall & Oates - Time Wont Pass Me By.mp3"
+import song240 from "./music/pop-soul/Jalen Ngonda - If You Dont Want My Love.mp3"
+import song241 from "./music/pop-soul/JEAN KNIGHT - MR.  BIG STUFF.mp3"
+import song242 from "./music/pop-soul/John Mayer - Moving On and Getting Over.mp3"
+import song243 from "./music/pop-soul/John Mayer - Waiting On The World To Change.mp3"
+import song244 from "./music/pop-soul/johnny taylor - Soul Heaven.mp3"
+import song245 from "./music/pop-soul/Keith Urban - Til Summer Comes Around.mp3"
+import song246 from "./music/pop-soul/Lenny Kravitz-Again.mp3"
+import song247 from "./music/pop-soul/Lighthouse Family - Run.mp3"
+import song278 from "./music/pop-soul/LIONEL RICHIE - LOVE WILL FIND A WAY.mp3"
+import song279 from "./music/pop-soul/Luther Vandross - A House Is Not a Home.mp3"
+import song280 from "./music/pop-soul/Madonna - Masterpiece.mp3"
+import song281 from "./music/pop-soul/Mariah Carey - Vision Of Love.mp3"
+import song282 from "./music/pop-soul/Michael Bolton - How Am I Supposed To Live Without You.mp3"
+import song283 from "./music/pop-soul/Michael Bolton - Soul Provider.mp3"
+import song284 from "./music/pop-soul/Michael Bolton - How Am I Supposed To Live Without You.mp3"
+import song285 from "./music/pop-soul/Michael Jackson - P.Y.T. (Pretty Young Thing).mp3"
+import song286 from "./music/pop-soul/Michael Jackson - Remember The Time.mp3"
+import song287 from "./music/pop-soul/Michael Jackson - Wanna Be Startin Somethin.mp3"
+import song288 from "./music/pop-soul/Michael Jackson - Will You Be There.mp3"
+import song289 from "./music/pop-soul/Michael Jackson Stranger in Moscow.mp3"
+import song290 from "./music/pop-soul/Michael Jackson, Janet Jackson - Scream.mp3"
+import song291 from "./music/pop-soul/Monica - Before You Walk Out Of My Life.mp3"
+import song292 from "./music/pop-soul/Mungo Jerry - In the Summertime.mp3"
+import song293 from "./music/pop-soul/Norah Jones - Sunrise.mp3"
+import song294 from "./music/pop-soul/Parcels - Comedown + Lightenup.mp3"
+import song295 from "./music/pop-soul/Pink Floyd - Wish You Were Here.mp3"
+import song296 from "./music/pop-soul/Pink Floyd – Time.mp3"
+import song297 from "./music/pop-soul/PM Dawn - Set Adrift on memory bliss.mp3"
+import song298 from "./music/pop-soul/Sade - I Never Thought I d See the Day.mp3"
+import song299 from "./music/pop-soul/Sade - I Will Be Your Friend.mp3"
+import song300 from "./music/pop-soul/Sade - Keep Looking.mp3"
+import song301 from "./music/pop-soul/Sade - Nothing Can Come Between Us.mp3"
+import song302 from "./music/pop-soul/Sade - Somebody Already Broke My Heart.mp3"
+import song303 from "./music/pop-soul/Sade - Turn My Back On You.mp3"
+import song304 from "./music/pop-soul/Sade - When Am I Going To Make A Living.mp3"
+import song305 from "./music/pop-soul/Shanice - I Love Your Smile.mp3"
+import song306 from "./music/pop-soul/Shirley Brown -  Dont Go Looking For My Man.mp3"
+import song307 from "./music/pop-soul/SHIRLEY BROWN-too much candy.mp3"
+import song308 from "./music/pop-soul/Sleep With One Eye Open by Shirley Brown.mp3"
+import song309 from "./music/pop-soul/Soul IV Real - Come see me.mp3"
+import song310 from "./music/pop-soul/Steely Dan - Hey Nineteen.mp3"
+import song311 from "./music/pop-soul/Supertramp - Free As A Bird.mp3"
+import song312 from "./music/pop-soul/The Main Squeeze - Man In The Mirror.mp3"
+import song313 from "./music/pop-soul/The Real Thing - You To Me Are Everything.mp3"
+import song314 from "./music/pop-soul/TLC - Waterfalls.mp3"
 
 
-const assets = {
-    hiphop : [song1,song2,song3,song4,song5,song6,song7,song8,song9,song10,song11,song12,song13,song14,song15,song16,song17,song18,song19,song20,song21,song22,song23,song24,song25,song26,song27,song28,song29,song30,song31,song32,song33,song34,song35,song36,song37,song38,song39,song40,song41,song42,song43,song44,song45,song46,song47,song48,song49,song50,song51,song52,song53,song54,song55,song56,song57,song58,song59,song60,song61,song62,song63,song64,song65,song66,song67,song68,song69,song70,song71,song72,song73,song74,song75,song76,song77,song78,song79,song80,song81,song82,song83,song84,song85,song86,song87,song88,song89,song90,song91,song92,song93,song94,song95,song96,song97,song98,song99,song100,song101,song102,song103,song104,song105,song106,song107,song108,song109,song110,song111,song112,song113,song114,song115,song116,song117,song118,song119,song120],
-    pictures : {playing,pausing}
-}
+
+const pictures = [
+    playing,
+    pausing
+]
+
+
+const hiphop = [
+        song1,song2,song3,song4,song5,song6,song7,song8,song9,song10,song11,song12,song13,song14,song15,song16,song17,song18,song19,song20,song21,song22,song23,song24,song25,song26,song27,song28,song29,song30,song31,song32,song33,song34,song35,song36,song37,song38,song39,song40,song41,song42,song43,song44,song45,song46,song47,song48,song49,song50,song51,song52,song53,song54,song55,song56,song57,song58,song59,song60,song61,song62,song63,song64,song65,song66,song67,song68,song69,song70,song71,song72,song73,song74,song75,song76,song77,song78,song79,song80,song81,song82,song83,song84,song85,song86,song87,song88,song89,song90,song91,song92,song93,song94,song95,song96,song97,song98,song99,song100,song101,song102,song103,song104,song105,song106,song107,song108,song109,song110,song111,song112,song113,song114,song115,song116,song117,song118,song119,song120,
+        song121,song122,song123,song124,song125,song126,song127,song128,song129,
+        song130,song131,song132,song133,song134,song135,song136,song137,song138,song139,song140,song141,song142,song143,song144,song145,song146,song147,song148,song149,song150,song151,song152,song153,song154,song155,song156,song157,song158,song159,song160,song161,song162,
+        song163,song164,song165,song166,song167,song168,
+        song169,song170,song171,song172,song173,song174,song175,song176,song177,song178,song179,song180,song181,song182,song183,song184,
+        song185,song186,song187,song188,song189,song190,song191,song192,song193,song194,song195,song196,song197,song198,song199,song200,song201,song202,song203,song204,song205,
+        song206,song207,song208,song209,song210,song211,song212,song213,song214,song215,song216,song217,song218,song219,song220,song221,song222,song223,song224,song225,song226,song227,song228,song229,song230,song231,song232,song233,song234,song235,song236,song237,song238,song239,song240,song241,song242,song243,song244,song245,song246,song247,song278,song279,song280,song281,song282,song283,song284,song285,song286,song287,song288,song289,song290,song291,song292,song293,song294,song295,song296,song297,song298,song299,song300,song301,song302,song303,song304,song305,song306,song307,song308,song309,song310,song311,song312,song313,song314
+    
+]
 
 export {
-    assets
+    hiphop,
+    pictures
 };
 

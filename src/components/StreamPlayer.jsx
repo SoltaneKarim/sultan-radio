@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import ReactHowler from "react-howler";
-import { assets } from "../assets/hiphop";
+import { pictures,hiphop } from "../assets/hiphop";
+
 
 const StreamPlayer = () => {
   const [play, setPlay] = useState(true); // Set initial state to true
   const [muted, setMuted] = useState(true); // New state for muting/unmuting
   const [currentIndex, setCurrentIndex] = useState(0);
   const [index, setIndex] = useState(0);
-  const image = muted ? assets.pictures.playing : assets.pictures.pausing; // Update image based on muted state
-  const music = assets.hiphop;
+  const image = muted ? pictures[0] : pictures[1]; // Update image based on muted state
+  const music = hiphop;
 
   const toggleAudio = () => {
     setMuted((prevMuted) => !prevMuted); // Toggle muted state

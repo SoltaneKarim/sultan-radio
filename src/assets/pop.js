@@ -1,8 +1,8 @@
 import song1 from "./music/pop-soul/A Long Time - Mayer Hawthorne.mp3"
-import song2 from "./music/pop-soul/Alexander O Neal - If You Were Here Tonight (TD Ext Version).mp3"
+import song2 from "./music/pop-soul/Alexander O Neal - If You Were Here Tonight.mp3"
 import song3 from "./music/pop-soul/Alicia Keys - You Dont Know My Name.mp3"
 import song4 from "./music/pop-soul/Amy Winehouse - Detachment.mp3"
-import song5 from "./music/pop-soul/Betty Wright - No Pain, (No Gain).mp3"
+import song5 from "./music/pop-soul/Betty Wright - No Pain No Gain.mp3"
 import song6 from "./music/pop-soul/Betty Wright- After The Pain.mp3"
 import song7 from "./music/pop-soul/Betty Wright-Tonight is the Night.mp3"
 import song8 from "./music/pop-soul/Blue One love - Audio.mp3"
@@ -98,9 +98,9 @@ import song94 from "./music/pop-soul/Womack & Womack - Teardrops.mp3"
 import song95 from "./music/pop-soul/Yes - Owner of a Lonely Heart.mp3"
 
 
-const panaché = [song1,song2,song3,song4,song5,song6,song7,song8,song9,song10,song11,song12,song13,song14,song15,song16,song17,song18,song19,song20,song21,song22,song23,song24,song25,song26,song27,song28,song29,song30,song31,song32,song33,song34,song35,song36,song37,song38,song39,song40,song41,song42,song43,song44,song45,song46,song47,song48,song49,song50,song51,song52,song53,song54,song55,song56,song57,song58,song59,song60,song61,song62,song63,song64,song65,song66,song67,song68,song69,song70,song71,song72,song73,song74,song75,song76,song77,song78,song79,song80,song81,song82,song83,song84,song85,song86,song87,song88,song89,song90,song91,song92,song93,song94,song95]
+const pop = [song1,song2,song3,song4,song5,song6,song7,song8,song9,song10,song11,song12,song13,song14,song15,song16,song17,song18,song19,song20,song21,song22,song23,song24,song25,song26,song27,song28,song29,song30,song31,song32,song33,song34,song35,song36,song37,song38,song39,song40,song41,song42,song43,song44,song45,song46,song47,song48,song49,song50,song51,song52,song53,song54,song55,song56,song57,song58,song59,song60,song61,song62,song63,song64,song65,song66,song67,song68,song69,song70,song71,song72,song73,song74,song75,song76,song77,song78,song79,song80,song81,song82,song83,song84,song85,song86,song87,song88,song89,song90,song91,song92,song93,song94,song95]
 
 export {
-    panaché
+    pop
 };
 
