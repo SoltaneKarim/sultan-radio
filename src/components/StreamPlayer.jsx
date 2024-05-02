@@ -28,40 +28,30 @@ const StreamPlayer = () => {
     setCurrentIndex(randomIndex);
   };
 
-  const cleanSongName = (name) => {
-    let cleanedName = ''; // Initialize an empty string to store the cleaned name
-    let word = ''; // Initialize an empty string to build each word
-    for (let i = 0; i < name.length; i++) {
-      if (name[i] === '/' && name[i + 1] === '/') {
-        break;
-      } else if (name[i] === '/') {
-        word = '';
-      } else {
-        word += name[i];
-      }
+  const cleanSongName = (url) => {
+    if (url){
+      // Extract the path from the URL
+    const pathStartIndex = url.lastIndexOf('/') + 1;
+    const path = url.substring(pathStartIndex);
+
+    // Remove file extension if present
+    const filename = path.split('.')[0];
+
+    // Replace "%20" with spaces
+    const cleanedName = filename.replace(/%20/g, ' ').replace(/%C3%9C/g, ' ').replace(/%E2%80%99/g, ' ')
+
+    // Split the filename by '-' and capitalize each word
+    const words = cleanedName.split('-');
+    const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+    const finalName = capitalizedWords.join('-');
+
+    return finalName; 
     }
-    const wordsToRemove = ["%20", ".mp3", "%5", "%80", "%E2", "%99", "%C3", "%F0", "%9F", "%8E", "%A7"];
-    for (let i = 0; i < word.length; i++) {
-      let match = false;
-      for (let j = 0; j < wordsToRemove.length; j++) {
-        const len = wordsToRemove[j].length;
-        if (word.substring(i, i + len) === wordsToRemove[j]) {
-          match = true;
-          i += len - 1;
-          break;
-        }
-      }
-      if (!match) {
-        cleanedName += word[i];
-      } else {
-        cleanedName += " ";
-      }
-    }
-    return cleanedName;
-  };
+    return -1
+    
+   };
   
-  console.log(music[currentIndex])
-  const song = music[currentIndex] ? music[currentIndex] :  "";
+  const song = music[currentIndex] ? cleanSongName( music[currentIndex] ):  "";
   
   return (
     <div className="home">
