@@ -9,11 +9,6 @@
   transform: scale(1.1); /* Scale up the image on hover */
 }
 
-.player {
-  margin-top: 10rem;
-  
-}
-
 .home {
   background-image: url("../src/assets/imgs/back3.png");
   background-size: 100% 100% ;
@@ -34,18 +29,15 @@
   font-size: 110%;
   padding: 1.2rem;
   text-align: center;
-  background: linear-gradient(-90deg, #ce8921 10%, rgba(221, 232, 11, 0) 80%);
-  margin-top: 21rem;
+  background: linear-gradient(-90deg, #9d4e47 55%, rgba(221, 232, 11, 0) 85%);
+  margin-top: 11rem;
 
 }
 
-@media screen and (max-width: 768px) {
-  .card{
-  margin-top: 21rem;
-  }
+.player-controls{
+  margin-top: 22rem;
+  text-align: center  ;
 }
-
-
 
 .card:hover {
   transform: scale(1.1); /* Scale up the image on hover */
