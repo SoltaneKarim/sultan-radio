@@ -33,44 +33,35 @@ const StreamPlayer = () => {
     let word = ''; // Initialize an empty string to build each word
     for (let i = 0; i < name.length; i++) {
       if (name[i] === '/' && name[i + 1] === '/') {
-        // If two consecutive slashes are encountered, break the loop
         break;
       } else if (name[i] === '/') {
-        // If a single slash is encountered, reset the word
         word = '';
       } else {
-        // If a character is not a slash, add it to the word
         word += name[i];
       }
     }
-    // Define words to be removed
     const wordsToRemove = ["%20", ".mp3", "%5", "%80", "%E2", "%99", "%C3", "%F0", "%9F", "%8E", "%A7"];
-    // Iterate through each character in the word and check if it matches any of the words to remove
     for (let i = 0; i < word.length; i++) {
       let match = false;
       for (let j = 0; j < wordsToRemove.length; j++) {
         const len = wordsToRemove[j].length;
-        // Check if the current substring in the word matches any of the words to remove
         if (word.substring(i, i + len) === wordsToRemove[j]) {
-          // If a match is found, set match to true and skip the characters to remove
           match = true;
           i += len - 1;
           break;
         }
       }
-      // If no match is found, add the character to the cleaned name
       if (!match) {
         cleanedName += word[i];
       } else {
-        // If a match is found, add a space after removing the word
         cleanedName += " ";
       }
     }
     return cleanedName;
   };
   
-  
-  const song = music[currentIndex] ? cleanSongName(music[currentIndex]) :  "";
+  console.log(music[currentIndex])
+  const song = music[currentIndex] ? music[currentIndex] :  "";
   
   return (
     <div className="home">
