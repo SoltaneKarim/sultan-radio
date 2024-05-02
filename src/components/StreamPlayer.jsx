@@ -70,7 +70,7 @@ const StreamPlayer = () => {
   };
   
   
-  const song = cleanSongName(music[currentIndex]);
+  const song = music[currentIndex] ? cleanSongName(music[currentIndex]) :  "";
   
   return (
     <div className="home">
