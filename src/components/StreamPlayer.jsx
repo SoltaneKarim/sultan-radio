@@ -73,7 +73,7 @@ const StreamPlayer = () => {
   const song = cleanSongName(music[currentIndex]);
   
   return (
-    <div>
+    <div className="home">
       <div className="player">
         <ReactHowler
           key={index}

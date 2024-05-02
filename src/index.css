@@ -3,11 +3,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('./assets/imgs/back12.png');
-    background-size: cover;
-    background-position: top;
-    min-height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }

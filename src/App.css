@@ -1,7 +1,8 @@
 #pp-img {
-  height: 170px;
+  height: 130px;
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+
 }
 
 #pp-img:hover {
@@ -9,25 +10,30 @@
 }
 
 .player {
-  margin-bottom: 40px;
-  height: 100%;
-  width: 100%;
+  margin-top: 1rem;
+}
+
+.home {
+  background-image: url("../src/assets/imgs/back3.png");
+  background-size: 100% 100% ;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* css for cards */
 
 .card {
-  position: fixed;
-  display: flex;
   height: 90px;
   width: 400px;
-  background-color: #d0753cea;
-  border-radius: 30px;
-  box-shadow: -1rem 0 5rem #b68181e9;
+  border-radius: 10px;
   transition: 0.4s ease-out;
   font-size: 110%;
-  margin: 0;
-  margin-left: -60px;
+  padding: 1.2rem;
+  text-align: center;
+  background: linear-gradient(-90deg, #ce8921 10%, rgba(221, 232, 11, 0) 80%);
 }
 
 .card:hover {
@@ -38,9 +44,6 @@
 .title {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  position: absolute;
-  left: 20px;
-  top: 15px;
 }
 
 /* css of footer */
@@ -59,10 +62,9 @@
   padding: 20px 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  left: 0;
-  bottom: 0px;
+  bottom: 0;
+  text-align: center;
 }
 
 .social-icon,
@@ -73,6 +75,7 @@
   align-items: center;
   margin: 10px 0;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .social-icon__link {
