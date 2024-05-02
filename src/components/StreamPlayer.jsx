@@ -27,38 +27,15 @@ const StreamPlayer = () => {
     setIndex(randomIndex);
     setCurrentIndex(randomIndex);
   };
-
-  const cleanSongName = (url) => {
-    if (url){
-      // Extract the path from the URL
-    const pathStartIndex = url.lastIndexOf('/') + 1;
-    const path = url.substring(pathStartIndex);
-
-    // Remove file extension if present
-    const filename = path.split('.')[0];
-
-    // Replace "%20" with spaces
-    const cleanedName = filename.replace(/%20/g, ' ').replace(/%C3%9C/g, ' ').replace(/%E2%80%99/g, ' ')
-
-    // Split the filename by '-' and capitalize each word
-    const words = cleanedName.split('-');
-    const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
-    const finalName = capitalizedWords.join('-');
-
-    return finalName; 
-    }
-    return -1
-    
-   };
   
-  const song = music[currentIndex] ? cleanSongName( music[currentIndex] ):  "";
+  const song = music[currentIndex] ? ( music[currentIndex] ).title :  "";
   
   return (
     <div className="home">
       <div className="player">
         <ReactHowler
           key={index}
-          src={music[currentIndex]}
+          src={music[currentIndex]?.url}
           playing={play}
           loop={true} // Set loop to true to continue playing after it finishes
           mute={muted} // Set mute state
