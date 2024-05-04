@@ -108,13 +108,13 @@
 .giphy {
   box-shadow: rgb(231 61 61 / 49%) 0px 30px 60px -12px inset, rgb(231 61 61 / 49%) 0px 0px 20px 14px;
   height: 150px;
-  margin-top: 316px;
+  margin-top: 22%;
   border-radius: 80px;
   opacity: 0.85;
 }
 @media screen and (max-width: 768px){
   .giphy{
-    margin-top: 240px;
+    margin-top: 41.5%;
     height: 120px;
   }  
 }
