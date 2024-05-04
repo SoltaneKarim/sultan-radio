@@ -8,6 +8,7 @@ const StreamPlayer = () => {
   const [muted, setMuted] = useState(true); // New state for muting/unmuting
   const [currentIndex, setCurrentIndex] = useState(0);
   const [index, setIndex] = useState(0);
+  const [array, setArray] = useState([])
   const image = muted ? pictures[0] : pictures[1]; // Update image based on muted state
   const music = hiphop;
 
@@ -24,8 +25,18 @@ const StreamPlayer = () => {
   const handleEnd = () => {
     // Play the next song randomly when the current one ends
     const randomIndex = Math.floor(Math.random() * music.length);
-    setIndex(randomIndex);
-    setCurrentIndex(randomIndex);
+    
+    if(array.length === 3){
+      setIndex(0);
+      setCurrentIndex(0);
+      setArray([])
+    }
+    else {
+      const updatedList = [...array, randomIndex];
+      setIndex(randomIndex);
+      setCurrentIndex(randomIndex);
+      setArray(updatedList)
+    }
   };
   
   const song = music[currentIndex] ? ( music[currentIndex] ).title :  "";

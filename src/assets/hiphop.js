@@ -1,6 +1,7 @@
 // hiphop files
 import playing from "./imgs/playing.png";
 import pausing from "./imgs/pauseing.png";
+import song0 from "./music/pub.mp3";
 import song1 from "./music/hiphop-rap/2 4 Family - Stay.mp3";
 import song2 from "./music/hiphop-rap/2Pac - 2 Of Amerikaz Most Wanted (feat. Snoop Dogg).mp3";
 import song3 from "./music/hiphop-rap/2Pac - Ain t Hard 2 Find Feat. B-Legit, Richie Rich, D-Shot, C-Bo & E-40.mp3";
@@ -304,9 +305,13 @@ import song312 from "./music/pop-soul/The Main Squeeze - Man In The Mirror.mp3";
 import song313 from "./music/pop-soul/The Real Thing - You To Me Are Everything.mp3";
 import song314 from "./music/pop-soul/TLC - Waterfalls.mp3";
 
+
+
 const pictures = [playing, pausing];
 
+
 const hiphop = [
+    {url : song0, title : "Musical Break 🕊🤣"},
     { url: song1, title: "2 4 Family - Stay" },
     { url: song2, title: "2Pac - 2 Of Amerikaz Most Wanted (feat. Snoop Dogg)" },
     { url: song3, title: "2Pac - Ain't Hard 2 Find Feat. B-Legit, Richie Rich, D-Shot, C-Bo & E-40" },
@@ -589,7 +594,7 @@ const hiphop = [
     { url: song310, title: "Steely Dan - Hey Nineteen" },
     { url: song311, title: "Supertramp - Free As A Bird" },{ url: song312, title: "The Main Squeeze - Man In The Mirror" },
     { url: song313, title: "The Real Thing - You To Me Are Everything" },
-    { url: song314, title: "TLC - Waterfalls" }
+    { url: song314, title: "TLC - Waterfalls" },
 ];
 
 export { hiphop, pictures };
