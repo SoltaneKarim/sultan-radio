@@ -23,7 +23,7 @@
 
 .card {
   height: 90px;
-  width: 400px;
+  width: 377px;
   border-radius: 10px;
   transition: 0.4s ease-out;
   font-size: 110%;
@@ -31,7 +31,6 @@
   text-align: center;
   background: linear-gradient(-90deg, #9d4e47 55%, rgba(221, 232, 11, 0) 85%);
   margin-top: 1rem;
-
 }
 
 .player-controls{
@@ -104,4 +103,18 @@
 .sm-logo {
   height: 40px;
   border-radius: 10px;
+}
+
+.giphy {
+  box-shadow: rgb(231 61 61 / 49%) 0px 30px 60px -12px inset, rgb(231 61 61 / 49%) 0px 0px 20px 14px;
+  height: 150px;
+  margin-top: 316px;
+  border-radius: 80px;
+  opacity: 0.85;
+}
+@media screen and (max-width: 768px){
+  .giphy{
+    margin-top: 240px;
+    height: 120px;
+  }  
 }
