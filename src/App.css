@@ -2,7 +2,12 @@
   height: 130px;
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
 
+@media screen and (max-width: 768px){
+  #pp-img{
+    height: 90px;
+  }  
 }
 
 #pp-img:hover {
@@ -80,6 +85,11 @@ margin-top: 1.4rem;  }
   flex-direction: column;
   bottom: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  .social-icon{
+    top: 1rem;  }  
 }
 
 .social-icon,
