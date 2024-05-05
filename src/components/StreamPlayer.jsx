@@ -9,7 +9,7 @@ const StreamPlayer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [index, setIndex] = useState(0);
   const [array, setArray] = useState([])
-  const image = muted ? pictures[0] : pictures[1]; // Update image based on muted state
+  const image = muted ? pictures.playing : pictures.pausing; // Update image based on muted state
   const music = hiphop;
 
   const toggleAudio = () => {
@@ -61,8 +61,8 @@ const StreamPlayer = () => {
           <h3 className="title">{song}</h3>
         </div>
       </div>
-        {/* <img className="giphy" src={pictures[2]} alt="apes" /> */}
-        <img className="offLogo" src="../../public/newlogo.png" alt="logo" />
+        {/* <img className="giphy" src={pictures.apes} alt="apes" /> */}
+        <img className="offLogo" src={pictures.logo} alt="logo" />
     </div>
   );
 };
