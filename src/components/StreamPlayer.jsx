@@ -43,6 +43,7 @@ const StreamPlayer = () => {
   
   return (
     <div className="home">
+      
       <div className="player-controls">
       <div className="player">
         <ReactHowler
@@ -60,8 +61,8 @@ const StreamPlayer = () => {
           <h3 className="title">{song}</h3>
         </div>
       </div>
-        <img className="giphy" src={pictures[2]} alt="apes" />
-      
+        {/* <img className="giphy" src={pictures[2]} alt="apes" /> */}
+        <img className="offLogo" src="../../public/newlogo.png" alt="logo" />
     </div>
   );
 };

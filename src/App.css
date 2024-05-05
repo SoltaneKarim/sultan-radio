@@ -10,7 +10,7 @@
 }
 
 .home {
-  background-image: url("../src/assets/imgs/back3.png");
+  background-image: url("../src/assets/imgs/newBack.jpg");
   background-size: 100% 100% ;
   background-repeat: no-repeat;
   height: 100vh;
@@ -30,12 +30,16 @@
   padding: 1.2rem;
   text-align: center;
   background: linear-gradient(-90deg, #9d4e47 55%, rgba(221, 232, 11, 0) 85%);
-  margin-top: 1rem;
+  margin-top: 7rem;
+  opacity: 0.8;
+
 }
 
 .player-controls{
-  margin-top: 3.5rem;
-  text-align: center  ;
+  margin-top: 23rem;
+    text-align: center;
+    margin-right: 17px;
+
 }
 
 .card:hover {
@@ -117,4 +121,10 @@
     margin-top: 41.5%;
     height: 120px;
   }  
+}
+
+.offLogo {
+  position: fixed;
+  width: 264px;
+  border-radius: 50%;
 }
