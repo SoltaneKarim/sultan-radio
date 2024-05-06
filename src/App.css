@@ -10,12 +10,14 @@
   }  
 }
 
+
+
 #pp-img:hover {
   transform: scale(1.1); /* Scale up the image on hover */
 }
 
 .home {
-  background-image: url("../src/assets/imgs/newBack.jpg");
+  background-image: url("../src/assets/imgs/back9.jpg");
   background-size: 100% 100% ;
   background-repeat: no-repeat;
   height: 100vh;
@@ -23,6 +25,11 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media screen and (max-width: 768px){
+  .home{
+    background-image: url("../src/assets/imgs/mediaQueryBack/11.jpg");
+}}
 
 /* css for cards */
 
@@ -34,14 +41,18 @@
   font-size: 110%;
   padding: 1.2rem;
   text-align: center;
-  background: linear-gradient(-90deg, #9d4e47 55%, rgba(221, 232, 11, 0) 85%);
+  background: linear-gradient(90deg, #d4791e 70%, rgba(221, 232, 11, 0) 95%);
   margin-top: 7rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 768px){
   .card{
-margin-top: 1.4rem;  }  
+margin-top: 1.4rem; 
+padding: 1.25rem; 
+background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
+
+}  
 }
 
 

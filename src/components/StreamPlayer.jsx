@@ -16,19 +16,15 @@ const StreamPlayer = () => {
     setMuted((prevMuted) => !prevMuted); // Toggle muted state
   };
 
-  useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * music.length);
-    setIndex(randomIndex); 
-    setCurrentIndex(randomIndex);
-  }, []);
-
   const handleEnd = () => {
     // Play the next song randomly when the current one ends
     const randomIndex = Math.floor(Math.random() * music.length);
+    const choices = [0, 1, 2]
+    const randomChoice = choices[Math.floor(Math.random() * choices.length)]
     
-    if(array.length === 3){
-      setIndex(0);
-      setCurrentIndex(0);
+    if(array.length === 1){
+      setIndex(randomChoice);
+      setCurrentIndex(randomChoice);
       setArray([])
     }
     else {
@@ -40,6 +36,12 @@ const StreamPlayer = () => {
   };
   
   const song = music[currentIndex] ? ( music[currentIndex] ).title :  "";
+  
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * music.length);
+    setIndex(randomIndex); 
+    setCurrentIndex(randomIndex);
+  }, []);
   
   return (
     <div className="home">

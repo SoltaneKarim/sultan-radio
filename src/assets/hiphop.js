@@ -3,7 +3,9 @@ import playing from "./imgs/playing.png";
 import pausing from "./imgs/pauseing.png";
 import logo from "./imgs/newlogo.png"
 import apes from "./imgs/giphy.gif"
-import song0 from "./music/pub.mp3";
+import pub1 from "./music/morganAdd.mp3";
+import pub2 from "./music/britneyAdd.mp3";
+import pub3 from "./music/snoopAdd.mp3";
 import song1 from "./music/hiphop-rap/2 4 Family - Stay.mp3";
 import song2 from "./music/hiphop-rap/2Pac - 2 Of Amerikaz Most Wanted (feat. Snoop Dogg).mp3";
 import song3 from "./music/hiphop-rap/2Pac - Ain t Hard 2 Find Feat. B-Legit, Richie Rich, D-Shot, C-Bo & E-40.mp3";
@@ -178,7 +180,6 @@ import song162 from "./music/deep/You Got Me Baby (Always) - Deepjack. Mr Nu (Ma
 import song163 from "./music/funk/Atlantic Starr - Love Me Down.mp3";
 import song164 from "./music/funk/Cerrone - Give me Love.mp3";
 import song165 from "./music/funk/George Benson - Love X Love.mp3";
-import song166 from "./music/funk/JAMES BROWN - Papa Dont Take No Mess  My Thang.mp3";
 import song167 from "./music/funk/James Brown - The Payback.mp3";
 import song168 from "./music/funk/Lillo Thomas - Let me be Yours.mp3";
 
@@ -196,7 +197,6 @@ import song177 from "./music/ragga-dancehall nudiscodance/Dr Alban – Loverboy.
 import song178 from "./music/ragga-dancehall nudiscodance/Fun Factory - I Wanna B With U.mp3";
 import song179 from "./music/ragga-dancehall nudiscodance/La Bouche - Be My Lover.mp3";
 import song180 from "./music/ragga-dancehall nudiscodance/Snap! - Ooops Up.mp3";
-import song181 from "./music/ragga-dancehall nudiscodance/SNAP! - The Power.mp3";
 import song182 from "./music/ragga-dancehall nudiscodance/Snow - Informer.mp3";
 import song183 from "./music/ragga-dancehall nudiscodance/Soul II Soul - Get a Life.mp3";
 import song184 from "./music/ragga-dancehall nudiscodance/Technotronic - Pump Up The Jam.mp3";
@@ -270,7 +270,6 @@ import song245 from "./music/pop-soul/Keith Urban - Til Summer Comes Around.mp3"
 import song246 from "./music/pop-soul/Lenny Kravitz-Again.mp3";
 import song247 from "./music/pop-soul/Lighthouse Family - Run.mp3";
 import song278 from "./music/pop-soul/LIONEL RICHIE - LOVE WILL FIND A WAY.mp3";
-import song279 from "./music/pop-soul/Luther Vandross - A House Is Not a Home.mp3";
 import song280 from "./music/pop-soul/Madonna - Masterpiece.mp3";
 import song281 from "./music/pop-soul/Mariah Carey - Vision Of Love.mp3";
 import song282 from "./music/pop-soul/Michael Bolton - How Am I Supposed To Live Without You.mp3";
@@ -313,7 +312,9 @@ const pictures = {playing, pausing, apes, logo};
 
 
 const hiphop = [
-    {url : song0, title : "Musical Break 🕊🤣"},
+    { url: pub1, title : "Morgan Freeman Break"},
+    { url: pub2 , title : "Britney Spears Break"},
+    { url: pub3 , title : "Snoop dog Break"},
     { url: song1, title: "2 4 Family - Stay" },
     { url: song2, title: "2Pac - 2 Of Amerikaz Most Wanted (feat. Snoop Dogg)" },
     { url: song3, title: "2Pac - Ain't Hard 2 Find Feat. B-Legit, Richie Rich, D-Shot, C-Bo & E-40" },
@@ -479,7 +480,6 @@ const hiphop = [
     { url: song163, title: "Atlantic Starr - Love Me Down" },
     { url: song164, title: "Cerrone - Give me Love" },
     { url: song165, title: "George Benson - Love X Love" },
-    { url: song166, title: "JAMES BROWN - Papa Dont Take No Mess  My Thang" },
     { url: song167, title: "James Brown - The Payback" },
     { url: song168, title: "Lillo Thomas - Let me be Yours" },
     { url: song169, title: "Captain Hollywood Project - More and More" },
@@ -494,7 +494,6 @@ const hiphop = [
     { url: song178, title: "Fun Factory - I Wanna B With U" },
     { url: song179, title: "La Bouche - Be My Lover" },
     { url: song180, title: "Snap! - Ooops Up" },
-    { url: song181, title: "SNAP! - The Power" },
     { url: song182, title: "Snow - Informer" },
     { url: song183, title: "Soul II Soul - Get a Life" },
     { url: song184, title: "Technotronic - Pump Up The Jam" },
@@ -562,7 +561,6 @@ const hiphop = [
     { url: song246, title: "Lenny Kravitz-Again" },
     { url: song247, title: "Lighthouse Family - Run" },
     { url: song278, title: "LIONEL RICHIE - LOVE WILL FIND A WAY" },
-    { url: song279, title: "Luther Vandross - A House Is Not a Home" },
     { url: song280, title: "Madonna - Masterpiece" },
     { url: song281, title: "Mariah Carey - Vision Of Love" },
     { url: song282, title: "Michael Bolton - How Am I Supposed To Live Without You" },
@@ -596,7 +594,7 @@ const hiphop = [
     { url: song310, title: "Steely Dan - Hey Nineteen" },
     { url: song311, title: "Supertramp - Free As A Bird" },{ url: song312, title: "The Main Squeeze - Man In The Mirror" },
     { url: song313, title: "The Real Thing - You To Me Are Everything" },
-    { url: song314, title: "TLC - Waterfalls" },
+    { url: song314, title: "TLC - Waterfalls" }
 ];
 
 export { hiphop, pictures };
