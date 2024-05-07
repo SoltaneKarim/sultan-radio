@@ -22,7 +22,7 @@ const StreamPlayer = () => {
     const choices = [0, 1, 2]
     const randomChoice = choices[Math.floor(Math.random() * choices.length)]
     
-    if(array.length === 1){
+    if(array.length === 3){
       setIndex(randomChoice);
       setCurrentIndex(randomChoice);
       setArray([])
