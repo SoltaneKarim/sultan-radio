@@ -47,7 +47,7 @@ const StreamPlayer = () => {
     <div className="home">
       <div className="video-desktop" style={styles.container}>
       <video autoPlay loop muted style={styles.video} >
-        <source src="/src/assets/imgs/back3.mov" type="video/mp4" />
+        <source src={pictures.background} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

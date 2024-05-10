@@ -2,6 +2,7 @@
 import playing from "./imgs/playing.png";
 import pausing from "./imgs/pauseing.png";
 import logo from "./imgs/newlogo.png"
+import background from "./imgs/back3.mov"
 import pub1 from "./music/morganAdd.mp3";
 import pub2 from "./music/britneyAdd.mp3";
 import pub3 from "./music/snoopAdd.mp3";
@@ -307,7 +308,7 @@ import song314 from "./music/pop-soul/TLC - Waterfalls.mp3";
 
 
 
-const pictures = {playing, pausing, logo};
+const pictures = {playing, pausing, logo, background};
 
 
 const hiphop = [
