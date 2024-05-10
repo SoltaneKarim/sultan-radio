@@ -1,0 +1,3 @@
+user-agent: *
+Disallow: 
+sitemap: https://sultanradio.netlify.app/sitemap.xml
