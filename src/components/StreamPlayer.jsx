@@ -22,7 +22,7 @@ const StreamPlayer = () => {
     const choices = [0, 1, 2]
     const randomChoice = choices[Math.floor(Math.random() * choices.length)]
     
-    if(array.length === 3){
+    if(array.length === 2){
       setIndex(randomChoice);
       setCurrentIndex(randomChoice);
       setArray([])
@@ -54,6 +54,8 @@ const StreamPlayer = () => {
           playing={play}
           loop={true} // Set loop to true to continue playing after it finishes
           mute={muted} // Set mute state
+          html5={true}
+          preload={true}
           onEnd={handleEnd} // Call handleEnd when the current song ends
         />
         <img id="pp-img" onClick={toggleAudio} src={image} alt="Mute/Unmute" />
