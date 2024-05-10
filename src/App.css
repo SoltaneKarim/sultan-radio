@@ -10,8 +10,6 @@
   }  
 }
 
-
-
 #pp-img:hover {
   transform: scale(1.1); /* Scale up the image on hover */
 }
@@ -45,6 +43,7 @@
   background: linear-gradient(90deg, #d4791e 70%, rgba(221, 232, 11, 0) 95%);
   margin-top: 1.5rem;
   opacity: 0.9;
+  
 }
 
 @media screen and (max-width: 768px){
@@ -52,8 +51,8 @@
 margin-top: 1.4rem; 
 padding: 1.25rem; 
 background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
-
 }  
+
 }
 
 
@@ -95,7 +94,11 @@ background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
 
 @media screen and (max-width: 768px){
   .social-icon{
-    top: 1rem;  }  
+    top: 1rem;  } 
+    .player-controls{
+align-items: auto;
+        text-align: center;
+    } 
 }
 
 .social-icon,
