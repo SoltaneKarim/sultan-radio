@@ -14,7 +14,7 @@ function Footer() {
                     <img className="sm-logo" src="https://i.pinimg.com/564x/8a/15/b6/8a15b646a6856d20854c2ac22623d971.jpg" alt="LinkedIn" />
                 </a></li>
             </ul>
-            <p>&copy;&nbsp;2024 Karim BSoltane | No Rights Reserved 😂</p>
+            <p className='footer-text'>&copy;&nbsp;2024 Sultan Radio | No Rights Reserved 😂</p>
         </footer>
     );
 }

@@ -28,21 +28,22 @@
 
 @media screen and (max-width: 768px){
   .home{
-    background-image: url("../src/assets/imgs/mediaQueryBack/11.jpg");
+    background-image: url("../src/assets/imgs/mediaQueryBack/2.jpg");
 }}
 
 /* css for cards */
 
 .card {
+  display: grid;
+  align-items: center;
   height: 90px;
   width: 377px;
   border-radius: 10px;
   transition: 0.4s ease-out;
   font-size: 110%;
-  padding: 1.2rem;
   text-align: center;
   background: linear-gradient(90deg, #d4791e 70%, rgba(221, 232, 11, 0) 95%);
-  margin-top: 7rem;
+  margin-top: 1.5rem;
   opacity: 0.9;
 }
 
@@ -59,12 +60,6 @@ background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
 .player-controls{
   margin-top: 23rem;
     text-align: center;
-}
-
-@media screen and (max-width: 768px){
-  .player-controls{
-    margin-top: 66%;
-  }  
 }
 
 .card:hover {
@@ -142,5 +137,14 @@ background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
 .offLogo {
   position: fixed;
   width: 264px;
-  border-radius: 50%;
+}
+
+@media screen and (max-width : 768px) {
+  .offLogo {
+    left : 0;
+    width : 150px
+  }
+  .footer-text {
+font-size: 17px !important; 
+ }
 }

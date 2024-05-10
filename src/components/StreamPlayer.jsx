@@ -45,7 +45,6 @@ const StreamPlayer = () => {
   
   return (
     <div className="home">
-      
       <div className="player-controls">
       <div className="player">
         <ReactHowler
@@ -59,13 +58,11 @@ const StreamPlayer = () => {
           onEnd={handleEnd} // Call handleEnd when the current song ends
         />
         <img id="pp-img" onClick={toggleAudio} src={image} alt="Mute/Unmute" />
-
       </div>  
         <div className="card">
           <h3 className="title">{song}</h3>
         </div>
       </div>
-        {/* <img className="giphy" src={pictures.apes} alt="apes" /> */}
         <img className="offLogo" src={pictures.logo} alt="logo" />
     </div>
   );

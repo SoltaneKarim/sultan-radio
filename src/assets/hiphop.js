@@ -2,7 +2,6 @@
 import playing from "./imgs/playing.png";
 import pausing from "./imgs/pauseing.png";
 import logo from "./imgs/newlogo.png"
-import apes from "./imgs/giphy.gif"
 import pub1 from "./music/morganAdd.mp3";
 import pub2 from "./music/britneyAdd.mp3";
 import pub3 from "./music/snoopAdd.mp3";
@@ -308,13 +307,13 @@ import song314 from "./music/pop-soul/TLC - Waterfalls.mp3";
 
 
 
-const pictures = {playing, pausing, apes, logo};
+const pictures = {playing, pausing, logo};
 
 
 const hiphop = [
-    { url: pub1, title : "Morgan Freeman Break"},
-    { url: pub2 , title : "Britney Spears Break"},
-    { url: pub3 , title : "Snoop dog Break"},
+    { url: pub1, title : "PUBLICITÉ"},
+    { url: pub2 , title : "PUBLICITÉ"},
+    { url: pub3 , title : "PUBLICITÉ"},
     { url: song1, title: "2 4 Family - Stay" },
     { url: song2, title: "2Pac - 2 Of Amerikaz Most Wanted (feat. Snoop Dogg)" },
     { url: song3, title: "2Pac - Ain't Hard 2 Find Feat. B-Legit, Richie Rich, D-Shot, C-Bo & E-40" },
