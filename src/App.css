@@ -15,6 +15,7 @@
 }
 
 .home {
+  background-image: url("../src/assets/imgs/back4.jpg");
   background-size: 100% 100% ;
   background-repeat: no-repeat;
   height: 100vh;
@@ -146,7 +147,7 @@ background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
 
 .offLogo {
   position: fixed;
-  width: 200px;
+  width: 180px;
 }
 
 @media screen and (max-width : 768px) {

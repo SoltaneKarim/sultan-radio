@@ -1,8 +1,8 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import ReactHowler from "react-howler";
 import { pictures,hiphop } from "../assets/hiphop";
-import { CircleLoader } from "react-spinners";
-const LazyBackground = lazy(() => import("./Background"))
+// import { CircleLoader } from "react-spinners";
+// const LazyBackground = lazy(() => import("./Background"))
 
 const StreamPlayer = () => {
   const [play, setPlay] = useState(true); // Set initial state to true
@@ -46,9 +46,9 @@ const StreamPlayer = () => {
   
   return (
     <div className="home">
-      <Suspense fallback={ <CircleLoader color="#a855f7"/> }>
+      {/* <Suspense fallback={ <CircleLoader color="#a855f7"/> }>
         <LazyBackground />
-      </Suspense>
+      </Suspense> */}
         <div className="streamPlayer-container">
         <div className="player-controls">
       <div className="player">
