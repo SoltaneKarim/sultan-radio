@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import ReactHowler from "react-howler";
 import { pictures,hiphop } from "../assets/hiphop";
-
+import { CircleLoader } from "react-spinners";
+const LazyBackground = lazy(() => import("./Background"))
 
 const StreamPlayer = () => {
   const [play, setPlay] = useState(true); // Set initial state to true
@@ -45,13 +46,9 @@ const StreamPlayer = () => {
   
   return (
     <div className="home">
-      <div className="video-desktop" style={styles.container}>
-      <video autoPlay loop muted style={styles.video} >
-        <source src={pictures.background} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      </div>
+      <Suspense fallback={ <CircleLoader color="#a855f7"/> }>
+        <LazyBackground />
+      </Suspense>
         <div className="streamPlayer-container">
         <div className="player-controls">
       <div className="player">
@@ -78,19 +75,6 @@ const StreamPlayer = () => {
   );
 };
 
-const styles = {
-  container: {
-    position: 'fixed',
-    width: '100%',
-    height: '100vh', // Or whatever size you want
-  zIndex : '-1'
-  },
-  video: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-};
 
 
 export default StreamPlayer;
