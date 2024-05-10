@@ -15,19 +15,27 @@
 }
 
 .home {
-  background-image: url("../src/assets/imgs/back9.jpg");
   background-size: 100% 100% ;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+}
+
+.video-desktop {
+  display: block;
 }
 
 @media screen and (max-width: 768px){
   .home{
-    background-image: url("../src/assets/imgs/mediaQueryBack/2.jpg");
-}}
+    background-image: url("../src/assets/imgs/mediaQueryBack/1.jpg");
+}
+  .video-desktop{
+    display: none;
+  }
+}
 
 /* css for cards */
 
@@ -35,7 +43,7 @@
   display: grid;
   align-items: center;
   height: 90px;
-  width: 377px;
+  max-width: 410px;
   border-radius: 10px;
   transition: 0.4s ease-out;
   font-size: 110%;
@@ -43,7 +51,8 @@
   background: linear-gradient(90deg, #d4791e 70%, rgba(221, 232, 11, 0) 95%);
   margin-top: 1.5rem;
   opacity: 0.9;
-  
+  width: 100%;
+    padding: 1rem;
 }
 
 @media screen and (max-width: 768px){
@@ -57,7 +66,6 @@ background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
 
 
 .player-controls{
-  margin-top: 23rem;
     text-align: center;
 }
 
@@ -96,7 +104,6 @@ background: linear-gradient(120deg, #738e88 75%, rgba(221, 232, 11, 0) 85%);
   .social-icon{
     top: 1rem;  } 
     .player-controls{
-align-items: auto;
         text-align: center;
     } 
 }
@@ -139,7 +146,7 @@ align-items: auto;
 
 .offLogo {
   position: fixed;
-  width: 264px;
+  width: 200px;
 }
 
 @media screen and (max-width : 768px) {

@@ -45,7 +45,15 @@ const StreamPlayer = () => {
   
   return (
     <div className="home">
-      <div className="player-controls">
+      <div className="video-desktop" style={styles.container}>
+      <video autoPlay loop muted style={styles.video} >
+        <source src="/src/assets/imgs/back3.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      </div>
+        <div className="streamPlayer-container">
+        <div className="player-controls">
       <div className="player">
         <ReactHowler
           key={index}
@@ -63,9 +71,26 @@ const StreamPlayer = () => {
           <h3 className="title">{song}</h3>
         </div>
       </div>
-        <img className="offLogo" src={pictures.logo} alt="logo" />
+
+        </div>
+     
     </div>
   );
 };
+
+const styles = {
+  container: {
+    position: 'fixed',
+    width: '100%',
+    height: '100vh', // Or whatever size you want
+  zIndex : '-1'
+  },
+  video: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+  },
+};
+
 
 export default StreamPlayer;
